@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<application name="percentage">
+<english>
+	<questions>
+	</questions>
+	<prompts>
+	<prompt name="prompt1" page="page3" text="Yippie! You saved 10 penguins!"/>
+	<prompt name="prompt2a" page="page3" text="Oh, you saved only"/>
+	<prompt name="prompt2b" page="page3" text=" penguins. Let's try another one ."/>
+	</prompts>
+	<instructions>
+	<instruction name='instruction1' page="page1" text="Carry The Penguins" voice="" />
+	<instruction name='instruction2' page="page3" text="Choose The Operation" voice="" />
+	<instruction name='instruction3' page="page4" text="Want to do other Operations?" voice="" />
+	<instruction name='instruction4' page="page4" text="Game Over" voice="" />
+	<instruction name='instruction5' page="page4" text="You have Saved " voice="" />
+	<instruction name='instruction6' page="page4" text="Penguins !! " voice="" />
+	<instruction name='instruction7' page="page4" text="You have to save at least 10 penguins to move to the next path." voice="" />
+	<instruction name='instruction8' page="page2" text="Help The Penguins Cross The River To The Island." voice="" />
+	<instruction name='+' page="page4" text="Will the sum of the given 2 numbers be odd or even? Click on the correct answer!" voice="" />
+	<instruction name='-' page="page4" text="Will the difference of the given 2 numbers be odd or even? Click on the correct answer!" voice="" />
+	<instruction name='instruction9' page="page4" text="You have to save at least 12 penguins to finish the game." voice="" />
+	</instructions>
+	
+	<miscellaneous>
+		<misc name="Play" text="PLAY" page="page1" voice="" />
+		<misc name="PlayA" text="PLAY AGAIN" page="page1" voice="" />	
+		<misc name="Quit" text="QUIT" page="page1" voice="" />
+		<misc name="Menu" text="MENU" page="page1" voice="" />	
+		<misc name="plus" text="Odd Even- Addition" page="page3" voice="" />
+		<misc name="minus" text="Odd Even- Subtraction" page="page3" voice="" />
+		<misc name="general" text="Odd Even- General" page="page3" voice="" />
+		<misc name="Even" text="Even" page="page3" voice="" />
+		<misc name="Odd" text="Odd" page="Odd" voice="" />
+		<misc name="Yes" text="YES" page="page3" voice="" />
+		<misc name="No" text="NO" page="page3" voice="" />
+		<misc name="Next" text="NEXT" page="page2" voice="" />
+		<misc name="score" text="Score" page="page2" voice="" />
+		<misc name="gameover" text="Game Over" page="page2" voice="" />
+	</miscellaneous>
+</english>
+<hindi>
+	<questions>
+	</questions>
+	<prompts>		
+	</prompts>
+	
+	<instructions>
+	</instructions>
+	
+	<miscellaneous>
+	</miscellaneous>
+</hindi>
+<gujarati>
+	<questions>
+	</questions>
+	<prompts>		
+	</prompts>
+	
+	<instructions>
+	</instructions>
+	
+	<miscellaneous>
+		<misc name="balloonText" text="pop!!!" page="page1" voice="" />
+		<misc name="buttonText" text="SHOW BALLOONS " page="page1" voice="" />
+	</miscellaneous>
+</gujarati>
+</application>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<application name="AngleTangle">
+<english>
+	<questions>
+	</questions>
+	<prompts>
+		<prompt name="prompt1a" page="page2" text="Great job! You scored "/>
+		<prompt name="prompt1b" page="page2" text="points!"/>
+		<prompt name="prompt2" page="page2" text="Oh no! That's wrong. Try the next question."/>
+		<prompt name="prompt31" page="page2" text="Wow! You cleared this level."/>
+		<prompt name="prompt32" page="page2" text="You cleared this level."/>
+		<prompt name="prompt4a" page="page2" text="Great job! You scored "/>
+		<prompt name="prompt4b" page="page2" text="bonus points."/>
+		<prompt name="prompt5" page="page2" text="Oh! That's incorrect. Try again."/>
+		<prompt name="prompt6" page="page2" text="Oh! That's incorrect."/>
+		<prompt name="prompt7" page="page2" text="Oh! That's incorrect. You lost the game."/>
+		<prompt name="prompt8" page="page3" text="Your time is up! &lt;br&gt;You scored."/>
+		<prompt name="prompt9" page="page3" text="Game Over! &lt;br&gt;You scored "/>
+		<prompt name="prompt10" page="page3" text="Congratulations! &lt;br&gt;You scored "/>
+		<prompt name="prompt11" page="page2" text="Click on the card whose angle is in between the two given angles."/>
+		<prompt name="prompt12" page="page3" text="Do you want to Quit the game?"/>
+		
+	</prompts>
+	<instructions>
+		<instruction name='instruction1' page="page1" text="Throw a card with an angle greater than the computer's to win. Collect as many cards as possible.&lt;br&gt;Good Luck!" voice="" />
+		<instruction name='instruction2' page="page" text="You have to throw the card in which the angle is greater than the computer's angle. Collect as many points as possible to win the game!"/>
+		<instruction name='instruction3' page="page2" text="Select the card with angle greater than the angle in computer's card."/>
+	</instructions>
+	<miscellaneous>
+		<misc name="Play" text="Play The Game" page="page1" voice="" />
+		<misc name="animation" text="Watch the Animation" page="page1" voice="" />
+		<misc name="Menu" text="MENU" page="page3" voice="" />
+		<misc name="submit" text="SUBMIT" page="page3" voice="" />
+		<misc name="Yes" text="YES" page="page3" voice="" />
+		<misc name="No" text="NO" page="page3" voice="" />
+		<misc name="inst" text="INSTRUCTIONS" page="page2" voice="" />
+		<misc name="quit" text="QUIT" page="page2" voice="" />
+		<misc name="bonus" text="Bonus" page="page2" voice="" />
+	</miscellaneous>
+</english>
+<hindi>
+	<questions>
+	</questions>
+	<prompts>		
+	</prompts>
+	
+	<instructions>
+	</instructions>
+	
+	<miscellaneous>
+	</miscellaneous>
+</hindi>
+<gujarati>
+	<questions>
+	</questions>
+	<prompts>		
+	</prompts>
+	
+	<instructions>
+	</instructions>
+	
+	<miscellaneous>
+	</miscellaneous>
+</gujarati>
+</application>

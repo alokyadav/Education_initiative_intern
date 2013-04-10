@@ -1,0 +1,349 @@
+html,body,div,p,span,canvas{
+	margin:0;
+	padding:0;
+}
+
+
+
+body {
+	overflow:hidden;
+	background-color:#ccc;
+	background-repeat:no-repeat;
+	font-family:"Comic Sans MS";
+	font-size:14px;
+	font-weight:bold;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none; 
+	-webkit-transform:scale(1);
+	-webkit-transform-origin : left top;
+	-moz-transform :scale(1);
+	-moz-transform-origin : left top;
+	-ms-transform :scale(1);
+	-ms-transform-origin : left top;
+	-o-transform :scale(1);
+	-o-transform-origin : left top;
+	transform :scale(1);
+	transform-origin : left top;	
+}
+
+.audioControls {
+	display:none;
+}
+.flip{
+	-moz-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	-ms-transform: scaleX(-1);
+	transform: scaleX(-1);	   
+}
+@-webkit-keyframes blink {
+  0% {
+  opacity: 1;
+  }
+  50% {
+  opacity: 0;
+  }
+  100% {
+  opacity: 1;
+  }
+}
+@-moz-keyframes blink {
+  0% {
+  opacity: 1;
+  }
+  50% {
+  opacity: 0;
+  }
+  100% {
+  opacity: 1;
+  }
+}
+@-o-keyframes blink {
+  0% {
+  opacity: 1;
+  }
+  50% {
+  opacity: 0;
+  }
+  100% {
+  opacity: 1;
+  }
+}
+
+
+.myImg {
+  -webkit-animation: blink 1s;
+  -webkit-animation-iteration-count:infinite;
+  -moz-animation: blink 1s;
+  -moz-animation-iteration-count: infinite;
+  -o-animation: blink 1s;
+  -o-animation-iteration-count: infinite;
+}
+
+#container { 
+	margin: 0 auto;
+	overflow:hidden;
+	background:url('../assets/bkg-1.png') no-repeat ;
+	border-spacing: 10px;	
+	position: absolute;
+	width:800px;
+	height:600px;	
+}
+#moon{
+	background:url('../assets/bkg-2.png') no-repeat -858px -30px;
+	position:absolute;
+	
+	width:67px;
+	height:97px;
+	top:31px;
+	left:151px;
+
+	
+}
+#Icon{
+	background:url('../assets/Icon.png') no-repeat;
+	left:0px;
+	top:20px;
+	width:150px;
+	position:absolute;
+	height:427px;
+}
+#loader {	
+	color:#FFFFFF;
+	width:800px;
+	height:600px;
+	background:#000000;
+}
+
+#loader img {
+	margin-top:25%;
+}
+#operationButtons{
+	position:absolute;
+	top:200px;
+	left:300px;
+	width:100px;
+	height:300px;
+	border: 2px solid black;
+}
+#movingBlock{
+	position:absolute;
+	background:url('../assets/sprite-peguine.png') no-repeat -13px -123px;
+	width:60px;
+	height:62px;
+}
+#animateContainer{
+	position:absolute;
+	width:750px;
+	height:215px;
+}
+#Timer{
+	position:absolute;
+	width:100px;
+	height:20px;
+	color:black;
+	
+}
+#penguinCrossed{
+	position:absolute;
+	width:25px;
+	height:25px;
+	color:black;
+	text-align:center;
+}
+#scale{
+	background: url('../assets/bkg-2.png') no-repeat -808px -143px;
+	position:absolute;
+	width:559px;
+	height:45px;
+	top:380px;
+	left:131px;
+}
+.bubble{
+	position:absolute;
+}
+#iceBergContainer{
+	position:absolute;
+	width:624px;
+	height:70px;
+	top:310px;
+	left:93px;
+}
+.button
+{
+	position:absolute;
+	width:67px;
+	height:66px;
+	text-align:center;
+	text-decoration:blink;
+	cursor:pointer;
+}
+.textArea{
+	position:absolute;
+	text-shadow: 2px 2px 2px #000;
+	color:grey;
+	text-align:center;
+	font-size:30px;
+}
+.operator{
+	position:absolute;
+}
+#minus{
+	background:url('../assets/sprite-peguine.png') no-repeat -205px -56px;
+	width:75px;
+	height:62px;
+	cursor:pointer;
+}
+#plus{
+	background:url('../assets/sprite-peguine.png') no-repeat -255px -382px;
+	width:146px;
+	height:118px;
+	cursor:pointer;
+}
+#mult{
+	background:url('../assets/sprite-peguine.png') no-repeat -274px -141px;
+	width:90px;
+	height:72px;
+	cursor:pointer;
+}
+#Div{
+	background:url('../assets/sprite-peguine.png') no-repeat -285px -252px;
+	width:104px;
+	height:84px;
+	cursor:pointer;
+}
+#circularDiv{
+	position:absolute;
+	border:2px solid green;
+	width:45px;
+	height:45px;
+	bottom:15px;
+	padding:5px;
+	color:green;
+	text-align:center;
+	font-size:20px;
+	z-index:105;
+	border-radius: 76.5px 76.5px 76.5px 76.5px ;
+}
+#iceBerg
+{
+	background:url('../assets/sprite-peguine1.png') no-repeat -19px -182px;
+	position:absolute;
+	width:78px;
+	height:70px;
+	cursor:pointer;
+	font-size:18px;
+	left:270px;
+	color:red;
+	text-align:center;
+}
+#bObj1{
+	position:absolute;
+	width:84px;
+	top:280px;
+	left:170px;
+	height:41px;
+	cursor:pointer;
+}
+#bObj2{
+	position:absolute;
+	width:84px;
+	top:360px;
+	left:170px;
+	height:41px;
+	cursor:pointer;
+}
+#Numbers
+{
+	position:relative;
+	margin-left:325px;
+	border:2px solid transparent;
+	width:50px;
+	height:100px;
+	text-align:center;
+	margin-top:-570px;
+}
+.row{
+}
+#numberTable{
+	position:absolute;
+	//border-bottom:4px solid orange;
+	left:355px;
+	top:25px;
+	color:orange;
+	font-size:35px;
+}
+#operator
+{
+	position:relative;
+	width:20px;
+	height:20px;
+	font-size:25px;
+	text-align:center;
+}
+#submitButton{
+	
+	width: 100px;
+	height:30px;
+	top:430px;
+	left:371px;
+	
+}
+#Quit{
+	left:5px;
+	top:5px;
+	width:100px;
+	height:30px;
+}
+#Menu{
+	left:5px;
+	top:45px;
+	width:100px;
+	height:30px;
+	
+}
+.Buttons{
+	position:absolute;
+	font-size:15px;
+	font-family: Arial;
+	font-weight:bold;
+	text-align:center;
+	cursor:pointer;
+}
+#Shark{
+	position:absolute;
+	width:162px;
+	opacity:.6;
+	height:82px;	
+}
+#GameOver{
+	
+	width:300px;
+	height:50px;
+	top:300px;
+	left:250px;
+	
+}
+#ScoreBoard{
+	position:absolute;
+	background:url('../assets/ScoreImage.png') no-repeat;
+	top:5px;
+	left:638px;
+	width:150px;
+	height:70px;
+}
+.penguins{
+	//border:1px solid black;
+	position:absolute;
+	background:url('../assets/sprite-peguine1.png') no-repeat -13px -94px;
+	width:58px;
+	height:61px;
+	
+}
+
+
+
+

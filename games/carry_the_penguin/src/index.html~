@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />	
+	<title>Carry The Penguins</title>	
+	<link href="../css/style.css" rel="stylesheet" type="text/css" />
+	<script src="../../../libs/jquery.js"></script>
+	<script src="../../../libs/common.js"></script>
+	<script src="../../../libs/jquery-1.7.1.min.js"></script>
+	<script src="../../../libs/jquery_ui.js"></script>
+	<script src="../../../libs/jquery_ui_touch.js"></script>
+	<script src="../../../libs/jquery.spritely-0.6.js" type="text/javascript"></script>
+	<script src="../../../libs/loadxmldoc.js"></script>
+	<script src="../../../libs/PxLoader.js" type="text/javascript"></script>
+	<script src="../../../libs/PxLoaderImage.js" type="text/javascript"></script>
+	<script src="../libs/scripts.js" type="text/javascript"></script>
+	<script type="text/javascript" src="../../../libs/parameterPassing.js"></script>	
+	<script>
+	//var xmlfile = 'xmlFile.xml';
+	var getParameters = getURLParameters();	
+	$(function(){
+		carry_the_penguinsObj = new carry_the_penguins();	
+		// Create the loader and queue our 3 images. Images will not 
+		// begin downloading until we tell the loader to start. 
+		var imageArray = new Array(			
+			'sprite-peguine.png',
+			'ScoreImage.png',
+			'sprite-peguine1.png',
+			'bkg-1.png',
+			'bkg-2.png',
+			'Icon.png'
+			
+		);
+		
+		var loader = new PxLoader(); 
+		$.each(imageArray,function(key,value){
+			var pxImage = new PxLoaderImage('../assets/'+value);  
+			loader.add(pxImage); 
+		}); 
+		
+		loader.start(); 
+
+		loader.addCompletionListener(function() 
+		{ 
+			loadXML(xmlfile, function() {carry_the_penguinsObj.loadHome();});
+   			
+		});	
+		//carry_the_penguinsObj.loadHome();
+		//balloonObj.loadHome();
+		//setTimeout("balloonObj.Pop()",3000);
+		//balloonObj.showButton();
+  
+	});
+	</script>	
+	
+</head> 
+ 
+<body >
+<div id="container" >
+<div id="loader" align="center">Loading...<img src="../assets/loader.gif"/></div>
+</div>
+</body>
+</html>	
